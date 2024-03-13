@@ -32,7 +32,7 @@ export default function App() {
         </div>
       </header>
 
-      <Suspense fallback={<Loader className={css.loader} />}>
+      <Suspense fallback={null}>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/movies" element={<MoviesPage />} />
